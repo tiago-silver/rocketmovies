@@ -5,13 +5,13 @@ import { FiSearch } from "react-icons/fi";
 export function Header(){
     return(
         <Container>
-            <h1>RocketMovies</h1>
+            <h1 >RocketMovies</h1>
            
           
-          <div className="boxsearch">
+            <div className="boxsearch">
             <Input icon={FiSearch} placeholder="Pesquisa por título"/>
 
-          </div>
+            </div>
             
             <Profile>
                 <div>
@@ -21,6 +21,8 @@ export function Header(){
                 <img src="https://github.com/tiago-silver.png" alt="" />
 
             </Profile>
+
+            
         </Container>
     )
 }

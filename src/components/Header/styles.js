@@ -5,15 +5,16 @@ export const Container = styled.header`
     grid-area: header;
 
 
-    padding: 2.4rem 12.3rem;
+    padding: 2.4rem 7rem;
     width: 100%;
     height: 11.6rem;
     background-color: ${({ theme}) => theme.COLORS.BACKGROUND_800} ;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
+    padding: 0 7rem;
 
     border-bottom: .1rem solid ${({ theme}) => theme.COLORS.GRAY_100};
 
@@ -23,16 +24,18 @@ export const Container = styled.header`
         font-weight: 700;
    }
 
-   > .boxsearch {
-     width: 40%;
+   >.boxsearch {
+       width: 40%;
    }
 
    
 `
 export const Profile = styled.div`
+    grid-area: profile;
     display: flex;
     align-items: center;
     gap: 0.9rem;
+    
    
    
     > div {

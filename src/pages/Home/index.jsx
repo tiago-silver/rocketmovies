@@ -29,7 +29,7 @@ export function Home(){
                     {id: '2', name: 'Drama'},
                     {id: '3', name: 'família'}
                     ]
-                  }} />
+                  }}  />
 
 <Movie data={{
                     title: 'Interstellar',

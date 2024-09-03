@@ -3,28 +3,64 @@ import styled from "styled-components";
 export const Container = styled.button`
     width: 100%;
 
-    background-color: ${({ theme}) => theme.COLORS.BACKGROUND_500};
+    background: ${({ theme, isdetails}) => isdetails ? 'transparent' : theme.COLORS.BACKGROUND_500};
     border: none;
     border-radius:1.6rem;
-    padding: 3.2rem;
+    padding:${({isdetails}) => isdetails ? "3.2rem 0rem" : "3.2rem"} ;
     margin-bottom: 2.4rem;
 
-    h1 {
-        font-size: 2.4rem;
-        color: ${({ theme}) => theme.COLORS.WHITE};
-        font-weight: 700;
-        line-height: normal;
+    > header{
+        display: flex;
+        flex-direction: ${({isdetails}) => isdetails ? "row" : "column"};
+        align-items:  ${({isdetails}) => isdetails ? "center" : "start"};
+        
+        
+        > h1 {
+            font-size:  ${({isdetails}) => isdetails ? "3.6rem" : "2.4rem"};
+            color: ${({ theme}) => theme.COLORS.WHITE};
+            font-weight: ${({isdetails}) => isdetails ? "500" : "700"};
+            margin-right: 2rem;
+        }
+        
+        > span {
+            color: ${({ theme}) => theme.COLORS.RED};
+            font-size: ${({isdetails}) => isdetails ? "3.6rem" : "1.6rem"};
+           
+    
+            > svg {
+                width: ${({isdetails}) => isdetails ? "2rem" : "1.2rem"} ;
+                height: ${({isdetails}) => isdetails ? "2rem" : "1.2rem"};
+                margin-right: 1rem;
+                
+            }
+           
+        }
     }
+    .userDate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .8rem;
 
-    > span {
-        color: ${({ theme}) => theme.COLORS.RED};
+        margin: 2.4rem 0 4.8rem;
+
+        > img {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+        }
+
+        span {
+            color:${({ theme}) => theme.COLORS.GRAY_200};
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
 
         > svg {
-            width: 1.2rem;
-            height: 1.2rem;
+            color: ${({ theme}) => theme.COLORS.RED};
         }
-       
     }
+
 
     p {
         display: -webkit-box;

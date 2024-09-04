@@ -5,6 +5,7 @@ export const Container = styled.div`
     border-radius: 1rem;
     width: 100%;
     border-radius: 1.0rem;
+    padding-left: 1rem;
 
     overflow: hidden;
    
@@ -12,7 +13,7 @@ export const Container = styled.div`
     align-items: center;
 
     > svg {
-        margin: 1rem;
+        
         color: ${({ theme }) => theme.COLORS.GRAY_200}
     }
    
@@ -20,6 +21,7 @@ export const Container = styled.div`
         border: none;
         background-color: ${({ theme}) => theme.COLORS.BACKGROUND_700};
         color: ${({ theme}) => theme.COLORS.WHITE};
+        padding: 1rem;
         
         width: 100%;
 

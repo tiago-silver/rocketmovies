@@ -1,6 +1,9 @@
 import { Container, Content } from "./styled";
 
 import  { Header } from "../../components/Header";
+
+import { FiPlus, FiArrowLeft } from "react-icons/fi";
+import { ButtonText } from "../../components/ButtonText";
 import { Movie } from "../../components/Movie";
 
 
@@ -11,7 +14,9 @@ export function Details(){
 
             <main>
 
-                <a href="#">Voltar</a>
+                <a href="#">
+                    <FiArrowLeft />
+                    Voltar</a>
                 <Content className="Content">
 
                     <Movie data={{

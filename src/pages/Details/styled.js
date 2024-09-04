@@ -7,6 +7,16 @@ export const Container = styled.div`
     > main {
         max-width: 104rem;
         margin: auto;
+
+        a {
+            color: ${({ theme }) => theme.COLORS.RED};
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+          
+        }
         p {
             text-align: justify;
             font-weight: 400;

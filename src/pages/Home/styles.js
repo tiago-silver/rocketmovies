@@ -12,7 +12,7 @@ export const Content = styled.div`
     margin: auto;
     height: calc(100vh - 12.2rem);
    
-    padding: 5rem 12.2rem;
+    padding: 0 12.2rem;
 
     > header {
         display: flex;

@@ -13,7 +13,7 @@ export function Header(){
 
             </div>
             
-            <Profile>
+            <Profile to = "/profile">
                 <div>
                     <h2>Tiago Luiz</h2>
                     <a href="#">Sair</a>

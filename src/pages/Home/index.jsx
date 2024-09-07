@@ -13,7 +13,7 @@ export function Home(){
         <Content>
             <header>
               <h1>Meus filmes</h1>
-              <NewNote>
+              <NewNote to = '/new'>
                 <FaPlus />
                 Adicionar filme
               </NewNote>

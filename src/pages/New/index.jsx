@@ -9,6 +9,8 @@ import { Section } from "../../components/Section";
 import { NoteItem } from "../../components/NoteItem/inde";
 import { Button } from "../../components/Button";
 
+import { Link } from "react-router-dom";
+
 export function New(){
     return (
         <Container>
@@ -18,7 +20,7 @@ export function New(){
             <main>
 
                 <Content>
-                    <a href="#"><FiArrowLeft /> Voltar</a>
+                    <Link to='/'><FiArrowLeft /> Voltar</Link>
 
                     <Form>
                         <header>
@@ -42,6 +44,7 @@ export function New(){
 
                                 <NoteItem  value="Romance" />
 
+                                
                                 <NoteItem  value="Romance" />
 
                                 <NoteItem $isnew placeholder = "Novo marcador"/>

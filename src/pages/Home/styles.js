@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -52,7 +53,7 @@ export const Content = styled.div`
         background: ${({theme}) => theme.COLORS.DARK_RED}; /* Cor do "polegar" ao passar o mouse */
 }
     `
-    export const NewNote = styled.a`
+    export const NewNote = styled(Link)`
         background-color: ${({theme}) => theme.COLORS.RED};
         border-radius: .8rem;
         color: ${({theme}) => theme.COLORS.BACKGROUND_800};

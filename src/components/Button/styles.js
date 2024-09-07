@@ -12,4 +12,6 @@ export const Container = styled.button`
 
         font-weight: 500;
 
+        margin-top: 1.6rem;
+
 `
